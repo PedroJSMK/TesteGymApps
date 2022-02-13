@@ -11,8 +11,7 @@ import FirebaseFirestore
 enum WebService {
      
   enum Endpoint: String {
-      //  case base = "https://habitplus-api.tiagoaguiar.co"
-         case base = "https://testelealapps-api.pedro"
+          case base = "https://testelealapps-api.pedro"
       
  
     case postUser = "/users"
@@ -21,8 +20,8 @@ enum WebService {
     case login = "/auth/login"
     case refreshToken = "/auth/refresh-token"
     
-    case workouts = "/users/me/habits"
-    case workoutValues = "/users/me/habits/%d/values"
+    case workouts = "/users/me/workouts"
+    case workoutValues = "/users/me/workouts/%d/values"
   }
   
     enum NetworkError {
